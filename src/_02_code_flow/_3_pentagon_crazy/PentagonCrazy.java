@@ -31,23 +31,24 @@ public class PentagonCrazy {
 		
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
-
+		int count = 0;
 		//  LOOP. Start a while loop to repeat the DRAW, TURN, and INCREASE COUNT code 200 times. 
-		
+		while( count < 200 ) {
+			rob.setRandomPenColor();
 				//  DRAW.  Make the robot move the amount in your count variable
-		
+		rob.move(count);
 				//  TURN.  Turn the robot the amount in your angle variable + 1
-
+		rob.turn(angle+1);
 				//  INCREASE COUNT. Increase the count by 1
-		
+		count+=1;
 		//  End the while loop here
-
+		}
 		//  Now hide the robot so you can see the pattern it has drawn.
 		
 		//  Run the program. 
 		//  Check the pattern against the picture in the recipe. If it matches, you are done!
 	
-
+		}
 	
 	// Variations:
 	// *12. make the pattern really huge
@@ -55,4 +56,4 @@ public class PentagonCrazy {
 	// *14. experiment with different shapes
 
 	}
-}
+
